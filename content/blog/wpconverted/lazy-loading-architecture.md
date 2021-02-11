@@ -1,0 +1,8 @@
+---
+title: 'Lazy Loading Architecture'
+date: Fri, 14 Mar 2008 14:56:33 +0000
+draft: false
+tags: ['code']
+---
+
+Every place of employment has their favorite patterns and this one is no different. Lazy Loading is a common theme amongst many of of the entities. Basically take a property and in the get, check for null. If its null then load using a manager or something. If its not null then the list has been loaded. It really only works for lists. I think if you are going to do a SOA app, you should stick with the philosophy of plain old clr objects (poco) and just leave your accessors alone. Put the loading logic in a manager and load explicitly. It can become a hidden performance issue, when lists are just loading when you look at them. The method I am talking about above is called [Lazy Initialization (Fowler)](http://martinfowler.com/eaaCatalog/lazyLoad.html) There are also several other types of Lazy Loading Fowler talks about including: Virtual Proxy, Value Holder, and Using Ghosts The Ghost pattern looks as though it may overcome the hidden performance problem by creating a lazy loading supertype that wraps the load status. So you can tell if the list is of type "ghost", "loading" or "loaded" A ghost would mean that the property should be lazy loaded when the oppurtunity arose. The problem I have with this, is the extra complexity of adding more layers. In the end for me, it just seems easier to develop a robust manager architecture where explicit loads are easy and intuitive. Fowler Martin. Patterns of Enterprise Architecture. 2003.

@@ -1,0 +1,8 @@
+---
+title: 'On the rails bandwagon part 2 (Editors)'
+date: Fri, 08 Jun 2007 02:07:06 +0000
+draft: false
+tags: ['code']
+---
+
+The first part of any good programming experience starts with the ide. I read a lot of reviews and decided to start out with [Jedit](http://www.jedit.org/index.php). It was cool at first, and pretty fast for a java app.  The first issue I encountered was installing plugins. I couldn't connect to the plugin repository for some of the plugins, so I had to install them manually:( So after 2 minutes of research I found I could just copy the plugins to jar folder in /home/jon/.jedit/jar/ and voila they worked. So I was already to import my first rails project, I opened projectviewer and added it. **Infinite Loop**. Yep seemed like there was a symlink in the folder structure and jEdit would just try and import the project forever.  I am tired of dealing with it, maybe I will try the next version. Next I tried [Radrails](http://www.aptana.com/download_rails_rdt.php). This is basically a trimmed down eclipse with some specific rails functions. Overall it is pretty nice, but I do wish I could use the command line to generate my scaffolds and my project would automatically update.  I did have some problems with their new version, so I just went with Radrails which is there Java 1.4 version. So for now I am sticking with radrails, maybe when I am more motivated I will try [Cream,](http://cream.sourceforge.net/) since I am familar with Vim

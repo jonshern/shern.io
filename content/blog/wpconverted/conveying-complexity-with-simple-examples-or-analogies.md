@@ -1,0 +1,8 @@
+---
+title: 'Conveying Complexity with Simple examples or analogies'
+date: Fri, 05 Sep 2008 02:00:31 +0000
+draft: false
+tags: ['business', 'code', 'technology']
+---
+
+Google just released there new browser [Google Chrome](http://www.google.com/chrome) It is beatifully simple piece of coding, in which each tab is broken into its own process. Each process can then spawn child process which correspond to various plugins, such as [shockwave flash](http://www.adobe.com/products/shockwaveplayer/), etc. This is a great way to isolate your processes from other errors, essentially it is a mini-os wrapped in a browser. This can be a difficult concept to wrap your head around and the cartoon that was produced is an excellent way to understand the nuts and bolts. **Some cartoons that convey difficult concepts.** [Google Chrome](http://www.google.com/googlebooks/chrome/) [Why we need architects](http://www.skyscrapr.net/blogs/video/archive/2006/03/10/46.aspx) [What is perpendicular storage](http://www.hitachigst.com/hdd/research/recording_head/pr/PerpendicularAnimation.html) [Design Patterns](http://www.amazon.com/Head-First-Design-Patterns/dp/0596007124) SOA is something that is often defined using analogies such as Legos,  Transportation, or the post office. It pays to think of things at their simplest level, it will really be helpful for you when attempting to convince others or your brilliance:)

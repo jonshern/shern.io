@@ -1,0 +1,8 @@
+---
+title: 'Sql Common Table Expressions'
+date: Fri, 02 Mar 2007 06:06:48 +0000
+draft: false
+tags: ['code']
+---
+
+I really like the concept of common table expressions, but I don't think I am using them in the right way.  I have a rather large query, it has several joins in each subquery and then the subqueries are joined together. So I thought I would use three Common Table Expressions in the query and then join the CTE's together. Whenever I try to use mulitple CTE's in the same stored procedure these are the errors I receive. Msg 156, Level 15, State 1, Line 40 Incorrect syntax near the keyword 'With'. Msg 319, Level 15, State 1, Line 40 Incorrect syntax near the keyword 'with'. If this statement is a common table expression or an xmlnamespaces clause, the previous statement must be terminated with a semicolon. That is the error when I have two CTE's right next to each other. For some reason I just can't add a semicolon to the end of one. I have to add another statement with a semicolon Invalid object name 'CTE\_Two'. This error is what happens when I access a CTE that was before a previous semicolon. So I guess we can only use one CTE per execution thread. I can understand why this happens, and know that I should probably just write shorter queries. I just think it would be nice to be able to use a bunch of these CTE's in the same Stored Procedure so other programmers can understand how these giant queries are working.
